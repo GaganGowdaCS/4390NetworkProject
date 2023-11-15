@@ -4,14 +4,14 @@ package socketProgramming;
 import java.io.*;
 import java.net.*;
 
-public class Client {
+public class ClientGFG {
  // initialize socket and input output streams
  private Socket socket = null;
  private DataInputStream input = null;
  private DataOutputStream out = null;
 
  // constructor to put ip address and port
- public Client(String address, int port)
+ public ClientGFG(String address, int port)
  {
      // establish a connection
      try {
@@ -61,6 +61,6 @@ public class Client {
 
  public static void main(String args[])
  {
-     Client client = new Client("127.0.0.1", 5000);
+     ClientGFG client = new ClientGFG("127.0.0.1", 5000);
  }
 }
